@@ -10,7 +10,7 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
 </p>
 
 ## Getting started
-1. Regularls: Make sure you have installed on your local machine `nodeJs` `v22.3+` as a runtime environment, the package manager `npm` and `git`.
+1. Regulars: Make sure you have installed on your local machine `nodeJs` `v22.3+` as a runtime environment, the package manager `npm` and `git`.
 
 2. Database: Install and start [MongoDB](https://www.mongodb.com/try/download/community) as your database service on your local machine or [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) if you prefer a cloud-hosted database. Create a new database instance for the app.
 
@@ -21,9 +21,9 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
 1. Fork this repo into your GitHub
 
 2. Clone your fork onto your local machine using
-   
+
    1. If you wish to load the project into a new directory, create one first
-   
+
    2. In your terminal navigate into your desired directory for this project and load your forked repository to you local machine
       ```bash
       cd <your-directory-name>
@@ -31,17 +31,17 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
       ```
 
 3. Install dependencies
-   
+
    1. Navigate in your terminal into the `/server` directory and install dependencies from npm
       ```bash
       cd server
       npm i
       cd ..         # ! navigates back to root directory !
       ```
-   
+
    2. Navigate in your terminal into the `/client` directory and install dependencies from npm
       ```bash
-      cd client   
+      cd client
       npm i
       cd ..          # ! navigates back to root directory !
       ```
@@ -56,7 +56,7 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
       ```bash
       echo "GOOGLE_MAPS_API_KEY='your_api_key'" >> .env      # ! replace 'your_api_key' with your key created for all Google Maps APIs via Google Console !
       ```
-   
+
    3. Add your database connection variables via the terminal
       ```bash
       echo "MONGODB_URI='your_connection_string'" >> .env         # ! replace 'your_connection_string' with your MongoDB connection string !
@@ -67,36 +67,36 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
       echo "SERVER_PORT='your_port'" >> .env                 # ! replace 'your_port' with your desired port number !
       echo "LOCAL_IP_ADDRESS='your_host'" >> .env                     # ! replace 'your_host' with your desired IP address !
       ```
- 
+
 
 6. Start the app
-   
-   1. Start your backend: 
+
+   1. Start your backend:
       ```bash
-      cd server   
-      npm run dev       
+      cd server
+      npm run dev
       cd ..             # ! navigates back to root directory !
       ```
       or if you prefer nodemon and have it installed
       ```bash
-      cd server   
-      npm run devN      
+      cd server
+      npm run devN
       cd ..             # ! navigates back to root directory !
       ```
-      
+
       **NOTE**: You should see messages logged to your console confirming your connection to the database and your server
-   
+
    3. Start your frontend: Open a new terminal window and run the following code from your current directory (`/server`)
       ```bash
       cd ..            # ! navigates back to root directory !
       cd client
       npm run start
       ```
-  
+
       The app is run with expo, which allows you to run the app on the web, via mobiles devices (Android & iOS) or on mobile simulators via your computer. You can change          the environment in the terminal as shown below:
-  
+
       <img src=./assets/Starting-client.png alt="expo environment settings" width=500 />
-  
+
       1. Web: Your editor should prompt you to open the app in the browser or simply enter click on the link in the terminal
       2. Mobile
          - iPhones: Scan the QR code in the terminal
@@ -141,7 +141,7 @@ PawGang is the perfect app for dog lovers who want to ensure their pets have ple
 6. **User-Friendly Navigation**:
    - Simple tab navigation for easy access to search and plan features.
    - Intuitive design ensures a seamless experience for all users.
-  
+
 ## Tech Stack
 - Language: TypeScript
 - Frontend:
