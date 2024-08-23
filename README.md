@@ -10,7 +10,7 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
 </p>
 
 ## Getting started
-1. Regularls: Make sure you have installed on your local machine `nodeJs` `v22.3+` as a runtime environment, the package manager `npm` and `git`.
+1. Regulars: Make sure you have installed on your local machine `nodeJs` `v22.3+` as a runtime environment, the package manager `npm` and `git`.
 
 2. Database: Install and start [MongoDB](https://www.mongodb.com/try/download/community) as your database service on your local machine or [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) if you prefer a cloud-hosted database. Create a new database instance for the app.
 
@@ -141,7 +141,6 @@ PawGang is the perfect app for dog lovers who want to ensure their pets have ple
 6. **User-Friendly Navigation**:
    - Simple tab navigation for easy access to search and plan features.
    - Intuitive design ensures a seamless experience for all users.
-
 
 ## Tech Stack
 - Language: TypeScript
