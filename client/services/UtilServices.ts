@@ -1,6 +1,5 @@
 import { LOCAL_IP_ADDRESS, SERVER_PORT } from '../config';
 import { LoginForm, IEvent, RegisterForm } from '../Types/DataTypes';
-import { createStackNavigator } from '@react-navigation/stack';
 import { Alert } from 'react-native';
 import moment, { Moment } from 'moment-timezone';
 import { LoginScreenNavigationProp } from '../Types/NavigationTypes';

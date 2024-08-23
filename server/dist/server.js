@@ -22,9 +22,6 @@ const express_1 = __importDefault(require("express"));
 const errorHandler_1 = require("./middleware/errorHandler");
 const index_1 = __importDefault(require("./models/index"));
 const index_2 = require("./routers/index");
-const dotenv_1 = require("dotenv");
-// Load environment variables from config file
-(0, dotenv_1.config)();
 exports.app = (0, express_1.default)();
 // middlewares
 exports.app.use((0, cors_1.default)()); // Cross-Origin Resource Sharing to allow requests from the client
@@ -32,10 +29,8 @@ exports.app.use(body_parser_1.default.json()); // Parsing the data from the clie
 exports.app.use(index_2.router); // Using the router
 exports.app.use(errorHandler_1.errorHandler); // Error middleware
 // connecting to the db and running the server
-// ! add server.close()
 const startServer = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        console.log(process.env.GOOGLE_MAPS_API_KEY);
         yield (0, index_1.default)();
         if (process.env.NODE_ENV !== 'test') {
             exports.app.listen(Number(config_1.SERVER_PORT), config_1.LOCAL_IP_ADDRESS, () => {
