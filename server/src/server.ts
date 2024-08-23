@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable import/no-extraneous-dependencies */
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import {SERVER_PORT, LOCAL_IP_ADDRESS, GOOGLE_MAPS_API_KEY} from './config';
