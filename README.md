@@ -10,7 +10,7 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
 </p>
 
 ## Getting started
-1. Regulars: Make sure you have installed on your local machine `nodeJs` `v22.3+` as a runtime environment, the package manager `npm` and `git`.
+1. Regularls: Make sure you have installed on your local machine `nodeJs` `v22.3+` as a runtime environment, the package manager `npm` and `git`.
 
 2. Database: Install and start [MongoDB](https://www.mongodb.com/try/download/community) as your database service on your local machine or [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) if you prefer a cloud-hosted database. Create a new database instance for the app.
 
@@ -95,14 +95,14 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
 
       The app is run with expo, which allows you to run the app on the web, via mobiles devices (Android & iOS) or on mobile simulators via your computer. You can change          the environment in the terminal as shown below:
 
-      <img src=./assets/Starting-client.png alt="expo environment settings" width=500 />
+      ![expo environment settings](./assets/starting-client.png)
 
       1. Web: Your editor should prompt you to open the app in the browser or simply enter click on the link in the terminal
       2. Mobile
          - iPhones: Scan the QR code in the terminal
          - Android: Install the expo app on your device and scan the QR code via the app.
            **Note**: If you have troubles connecting, check that your network connection is set as 'private' or use a tunnel service to connect between computer and your               device by running in your terminal `expo start --tunnel` to start the app client-side
-      3. Mobile simulator
+      3. Computer
          - iOS (for iPhone): Follow the [Expo Guide](https://docs.expo.dev/workflow/ios-simulator/) to set up the iOS simulator
          - Windows (for Android): Follow the [Expo Guide](https://docs.expo.dev/workflow/android-studio-emulator/#install-watchman-and-jdk) to set up the Android simulator
 
@@ -141,6 +141,7 @@ PawGang is the perfect app for dog lovers who want to ensure their pets have ple
 6. **User-Friendly Navigation**:
    - Simple tab navigation for easy access to search and plan features.
    - Intuitive design ensures a seamless experience for all users.
+
 
 ## Tech Stack
 - Language: TypeScript
