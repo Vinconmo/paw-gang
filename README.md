@@ -95,14 +95,14 @@ PawGang is a mobile scheduling app (Android & iOS) for visits to dog parks. It h
 
       The app is run with expo, which allows you to run the app on the web, via mobiles devices (Android & iOS) or on mobile simulators via your computer. You can change          the environment in the terminal as shown below:
 
-      ![expo environment settings](./assets/starting-client.png)
+      <img src=./assets/Starting-client.png alt="expo environment settings" width=500 />
 
       1. Web: Your editor should prompt you to open the app in the browser or simply enter click on the link in the terminal
       2. Mobile
          - iPhones: Scan the QR code in the terminal
          - Android: Install the expo app on your device and scan the QR code via the app.
            **Note**: If you have troubles connecting, check that your network connection is set as 'private' or use a tunnel service to connect between computer and your               device by running in your terminal `expo start --tunnel` to start the app client-side
-      3. Computer
+      3. Mobile simulator
          - iOS (for iPhone): Follow the [Expo Guide](https://docs.expo.dev/workflow/ios-simulator/) to set up the iOS simulator
          - Windows (for Android): Follow the [Expo Guide](https://docs.expo.dev/workflow/android-studio-emulator/#install-watchman-and-jdk) to set up the Android simulator
 
