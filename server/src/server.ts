@@ -2,15 +2,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import {SERVER_PORT, LOCAL_IP_ADDRESS} from './config';
+import {SERVER_PORT, LOCAL_IP_ADDRESS, GOOGLE_MAPS_API_KEY} from './config';
 import express, { Application } from 'express';
 import { errorHandler } from './middleware/errorHandler';
 import connectToDatabase from './models/index';
 import { router } from './routers/index';
-import {config} from 'dotenv';
-
-// Load environment variables from config file
-config();
 
 export const app: Application = express();
 
@@ -22,10 +18,8 @@ app.use(errorHandler); // Error middleware
 
 
 // connecting to the db and running the server
-// ! add server.close()
 const startServer = async (): Promise<void> => {
   try {
-    console.log(process.env.GOOGLE_MAPS_API_KEY)
     await connectToDatabase();
     if (process.env.NODE_ENV !== 'test') {
       app.listen(Number(SERVER_PORT), LOCAL_IP_ADDRESS, () => {

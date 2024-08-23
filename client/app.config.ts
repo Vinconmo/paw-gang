@@ -1,7 +1,7 @@
 import 'ts-node/register';
-import {ExpoConfig} from 'expo/config';
+import { ExpoConfig } from 'expo/config';
 import dotenv from 'dotenv';
-dotenv.config({path: '../.env'})
+dotenv.config({ path: '../.env' });
 
 const config: ExpoConfig = {
   name: 'paw-gang',
@@ -11,6 +11,9 @@ const config: ExpoConfig = {
     googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
     localIpAddress: process.env.LOCAL_IP_ADDRESS,
     serverPort: process.env.SERVER_PORT,
+    eas: {
+      projectId: 'cfffe19e-4978-4960-9ec5-d71d8f44a4ba',
+    },
   },
   orientation: 'portrait',
   icon: './assets/icon.png',
@@ -32,6 +35,7 @@ const config: ExpoConfig = {
   web: {
     favicon: './assets/icon.png',
   },
+  owner: 'vincomo'
 };
 
 export default config;
