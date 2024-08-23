@@ -1,6 +1,5 @@
-import mongoose, { Document, Schema, model } from 'mongoose';
+import mongoose, { Schema, model } from 'mongoose';
 import bcrypt from 'bcrypt';
-import { IUser } from '../types';
 
 // Define an interface for Mongoose document including user properties
 export interface IUserDocument extends Document {
