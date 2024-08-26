@@ -154,6 +154,6 @@ PawGang is the perfect app for dog lovers who want to ensure their pets have ple
      4. Jest (testing)
 
 ## Contributors
-Eugenio Navajo - [GitHub](https://github.com/eugenionavasan), [LinkedIn](https://www.linkedin.com/in/eugenio-navajo-741610306/)
-Andre Amato - [GitHub](https://github.com/andre-amato), [LinkedIn](https://www.linkedin.com/in/andre-amato/)
+Eugenio Navajo - [GitHub](https://github.com/eugenionavasan), [LinkedIn](https://www.linkedin.com/in/eugenio-navajo-741610306/)\
+Andre Amato - [GitHub](https://github.com/andre-amato), [LinkedIn](https://www.linkedin.com/in/andre-amato/)\
 Vincent Moser - [GitHub](https://github.com/Vinconmo), [LinkedIn](https://www.linkedin.com/in/vincent-moser/)
