@@ -10,7 +10,7 @@ import { ServerService } from './ServerApiServices';
 const SIGNUP_URL = `http://${LOCAL_IP_ADDRESS}:${SERVER_PORT}/users/`;
 
 // Function to handle user sign-up
-export const handleSignUp = async (form: LoginForm): Promise<any> => {
+export const handleSignUp = async (form: RegisterForm): Promise<any> => {
   try {
     const response = await fetch(SIGNUP_URL, {
       method: 'POST',

@@ -26,9 +26,12 @@ const Login: React.FC<{navigation: any}> = ({navigation}) => {
 
   const onSignUp = async (): Promise<void> => {
     try {
+      console.log(1)
       if (isValidSignUp(formData) && isValidEmail(formData.email)) {
+        console.log(2)
         setLoading(true);
         const result = await handleSignUp(formData);
+        console.log('result', result)
         if (result) {
           setSignUpSuccess(true);
           setIsSignUp(false);
@@ -149,7 +152,7 @@ const Login: React.FC<{navigation: any}> = ({navigation}) => {
                 </>
               }
                 <View style={styles.formAction}>
-                  <TouchableOpacity onPress={isSignUp ? onSignUp : onSignIn} disabled={loading}>
+                  <TouchableOpacity onPress={isSignUp ? onSignUp : onSignIn} disabled={loading} testID='12345'>
                     <View
                       style={[
                         styles.btn,
